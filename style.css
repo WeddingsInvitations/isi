@@ -1,0 +1,75 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+}
+
+/* Layer 1: Fixed background */
+.background-fixed {
+  background: url('bgbody.png') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Layer 2: Scrollable content */
+.home-content {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparan */
+}
+
+/* Logo */
+.logo-home {
+  display: block;
+  max-width: 120px;
+  margin: 0 auto 30px;
+}
+
+/* Foto pasangan */
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.couple-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1s ease;
+}
+
+/* Quotes */
+.quote-box {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+  color: #444;
+}
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #7a4b5a;
+}
+.reference {
+  font-weight: bold;
+  color: #b26780;
+}
