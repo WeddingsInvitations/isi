@@ -12,7 +12,7 @@ html, body {
 
 /* Layer 1: Fixed background */
 .background-fixed {
-  background: url('bgbody.png') no-repeat center center;
+  background: url('home/bgbody.png') no-repeat center center;
   background-size: cover;
   position: fixed;
   top: 0;
