@@ -76,7 +76,7 @@ html, body {
 }
 .quote {
   font-style: italic;
-  font-size: 0.9rem; /* diperkecil */
+  font-size: 0.7rem; /* diperkecil */
   margin-bottom: 10px;
   color: #7a4b5a;
 }
