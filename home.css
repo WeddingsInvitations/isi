@@ -49,10 +49,58 @@ html, body {
 }
 
 /* Logo */
-.logo-home {
-  display: block;
-  max-width: 120px;
-  margin: 0 auto 30px;
+.logo-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo {
+  position: absolute;
+  height:auto;
+  width: 80px;
+  transition: all 1.5s ease;
+  opacity: 0;
+}
+
+/* posisi awal */
+.logo1 {
+  top: 10%;
+  right: -100px;
+}
+
+.logo2 {
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo3 {
+  top: 10%;
+  left: -100px;
+}
+
+/* posisi akhir */
+.animate .logo1 {
+  right: calc(50% + 20px); /* 50% posisi tengah + jarak 50 + setengah lebar gambar */
+  opacity: 1;
+}
+
+.animate .logo2 {
+  top: 10%;
+  opacity: 1;
+}
+
+.animate .logo3 {
+  left: calc(50% + 20px);
+  opacity: 1;
 }
 
 /* Foto pasangan */
