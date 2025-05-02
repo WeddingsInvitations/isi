@@ -64,7 +64,6 @@ html, body {
 
 .logo {
   position: absolute;
-  height:35%
   width: 20px;
   transition: all 1.5s ease;
   opacity: 0;
