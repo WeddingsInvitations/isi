@@ -36,7 +36,7 @@ html, body {
 /* Layer 3: khusus untuk quotes */
 .quote-layer {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 30px 20px;
   margin: 30px 0;
   width: 100%;
   border-radius: 0;
@@ -71,7 +71,6 @@ html, body {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 10px;
   color: #444;
 }
 .quote {
