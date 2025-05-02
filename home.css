@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body {
   height: 100%;
   font-family: 'Georgia', serif;
@@ -12,24 +13,33 @@ html, body {
 
 /* Layer 1: Fixed background */
 .background-fixed {
-  background: url('home/bgbody.png') no-repeat center center;
+  background: url('background.png') no-repeat center center;
   background-size: cover;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
-/* Layer 2: Scrollable content */
+/* Layer 2: Scrollable konten */
 .home-content {
   position: relative;
   height: 100%;
   overflow-y: auto;
   scroll-behavior: smooth;
   padding: 40px 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* semi-transparan */
+  background-color: rgba(255, 255, 255, 0.6); /* lebih transparan dari sebelumnya */
+}
+
+/* Layer 3: khusus untuk quotes */
+.quote-layer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Logo */
@@ -58,14 +68,11 @@ html, body {
 /* Quotes */
 .quote-box {
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 10px;
   color: #444;
 }
 .quote {
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.9rem; /* diperkecil */
   margin-bottom: 10px;
   color: #7a4b5a;
 }
